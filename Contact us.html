@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Contact Page</title>
+
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="Basic HTML"/>
+	<meta name="keywords" content="HTML"/>
+	<meta name="Raaj" content="assignment">
+	<style>
+		.footer{
+			
+	width: 100%;
+	float: left;
+}
+	.form{
+
+	}
+	</style>
+	<script>
+		function validateForm(){
+			var F = document.forms["myForm"]["firstname"].value;
+			var L = document.forms["myForm"]["lastname"].value;
+			var Age = document.forms["myForm"]["age"].value;
+			var Phone = document.forms["myForm"]["phone"].value;
+			var Email = document.forms["myForm"]["email"].value;
+			var message = document.forms["myForm"]["message"].value;
+
+			if (F == "" || L == "" || Age == "" || Phone == "" || Email == "" || message == ""){
+
+				alert("above all contents are empty");
+					}
+			else{
+				alert("thank you for filling form")
+			}
+
+		}
+	</script>
+
+	
+</head>
+<body>
+	<header>
+	<ul class="sub">
+		<li><a class="room" href="Home.html">Home</a></li>
+		<li><a href="CV.html">CV</a></li>
+		<li><a href="Blog.html">Blog</a></li>
+		<li><a href="Research.html">Research</a></li>
+		<li><a href="Contact us.html">Contact</a></li>
+		<li><div style="margin:0; padding:15px;"><input type="text" placeholder="search"></div></li>
+	</ul>
+	</header>
+	<h1 align="center">Please fill the form to contact us</h1>
+		<div class="form">
+		<form name="myForm" onsubmit="validateForm()" method="post" align="center">
+			<h3>First Name:<input type="text" name="firstname" placeholder="Fname"></h3>
+			<h3>Last Name:<input type="text" name="lastname" placeholder="Lname"></h3>
+			<h3>Age:<input type="text" name="age" placeholder="age"></h3>
+			<h3>phone:<input type="text" name="phone" placeholder="+977**********"></h3>
+			<h3>Email:<input type="text" name="email" placeholder="email"></h3>
+			<h3>Gender: <input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female" checked>Female</h3>
+			<h3>Message: <textarea name="message" rows="5" cols="30" placeholder="please enter your message"></textarea></h3>
+			<h3><input type="submit" value="Submit"></h3>
+
+		</form>
+	</div>
+	
+	<footer>
+		<div class="footer">
+		<section>
+		<p class="sos">All rights reserved.<br> Designed by:<b> Raaj Bhandari</b></p>
+		<p>For further more details you can visit below links.</p>
+	</section>
+		<ul>
+			<li><a href="https://www.instagram.com/raaj_bhandari0209"><img src="insta.jpg" alt="instagram logo" width="30" height="30"></a>
+			</li>
+			<li><a href="https://www.facebook.com/raaj.bhandari.79"><img src="facebook.png" alt="facebook logo" width="30" height="30"></a></li>
+			<li><a href="https://twitter.com/RaajBhandari12"><img src="twitter.jpg" alt="twitter logo" width="30" height="30"></a></li>
+		</ul>
+	</div>
+	</footer>
+	
+
+
+
+
+</body>
+</html>

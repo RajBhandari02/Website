@@ -1,0 +1,55 @@
+body{
+	background: linear-gradient(white,skyblue);
+	
+	background-size: cover;
+}
+
+ .sub{
+	list-style-type:none; 
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	border:1px platinum;
+	background-color: black;
+}
+li{
+	float:left;
+}
+li a{
+	display:block;
+	color:white;
+	text-align:center;
+	padding:15px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color: grey;
+}
+
+
+
+.cell{
+	width:200px;
+	height:200px;
+	border:1px solid black;
+}
+.bun{
+	
+	width:100%;
+	color:white;
+	background-color:black;
+	padding:5px;
+	text-align:center;
+}
+.bun:hover{
+	background-color:grey;
+	color:black;
+}
+ul{
+	list-style-type:none; 
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	border:1px platinum;
+	
+}

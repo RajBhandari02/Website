@@ -1,0 +1,129 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Blog Page</title>
+	<meta name="description" content="Basic HTML"/>
+	<meta name="keywords" content="HTML"/>
+	<meta name="Raaj" content="assignment">
+
+	<link rel="stylesheet" href="style.css">
+	<style>
+	#read {display: none;}
+
+		.c{
+			text-align:justify;
+		}
+		.do{
+			width:45%;
+			height:80%;
+			float:left;
+		}
+		.of{
+			width:45%;
+			height:80%;
+			float:right;
+		}
+	
+.so{
+	width: 100%;
+	float: left;
+}
+.footer{
+	width: 100%;
+	float: left;
+}
+	
+	</style>
+	<script>
+			function fac() {
+		  var book = document.getElementById("bok");
+		  var moveText = document.getElementById("lee");
+		  var btnText = document.getElementById("off");
+
+		  if (book.style.display === "none") {
+		    book.style.display = "inline";
+		    btnText.innerHTML = "Learn More";
+		    moveText.style.display = "none";
+		  } else {
+		    book.style.display = "none";
+		    btnText.innerHTML = "Learn less";
+		    moveText.style.display = "inline";
+		  }
+		}
+	</script>
+
+	
+</head>
+<body>
+	<header>
+	<ul class="sub">
+		<li><a class="room" href="Home.html">Home</a></li>
+		<li><a href="CV.html">CV</a></li>
+		<li><a href="Blog.html">Blog</a></li>
+		<li><a href="Research.html">Research</a></li>
+		<li><a href="Contact us.html">Contact</a></li>
+		<li><div style="margin:0; padding:15px;"><input type="text" placeholder="search"></div></li>
+	</ul>
+	</header>
+		<h1 align="center"><u>TECHNOLOGY</u></h1>
+		<img src="tech.jpg" alt="technology" width="1000" height="500">
+		<p class="c">Technology is a framework that includes the technological process, technological objects, technological information, creators of technological objects, users of technological objects, and the worldview (i.e., beliefs about things and their meaning that form how one sees the world) that has developed from and drives the technological process. The technical method, as Ellul put it, is this. I'll use all five senses in the rest of this post, but when I say "technology," I'm referring to the fifth and most complete sense.</p>
+		<p class="c">Many people are concerned about the impact of technology on toddlers, infants, and teenagers' growth due to the rapid adoption of technology into their everyday lives. Despite the fact that the negative effects of technology constantly make the headlines and are hot topics of discussion, technology is increasingly being used in educational environments, such as the classroom.</p>
+
+		<h2><u>Some positive and negative impact of technology on students are considered below:</u></h2>
+		<div class="do">
+		<h3><u>Positive impacts</u></h3>
+		<p class="c"> Technology has been more incorporated into the classroom in recent years to improve children's learning experiences. Smartboards, document cameras, Apple TVs, and even 3D printers are now being used in educational settings to increase communication and involve students in the learning process. Teachers and students have increased innovation and project-based learning experiences as a result of increased classroom collaboration, making instructional instruction more meaningful.These technologies require children to work independently in order to accomplish a particular goal. They are confronted with a variety of roadblocks and obstacles in the process, which they must learn to manage and overcome. As a result, they'll be motivated <span id="dot">...</span><span id="read">to come up with their own problem-solving ideas when confronted with real-life problems like homework difficulties, friendship conflicts, or personal difficulty, as well as technological challenges.It is common knowledge that many of today's new technologies hold the key to our future. Technical skills will become more critical in the workplace in the coming years, as will the growing effect they will have on daily life. One of the most important advantages of introducing children to technology is that they will be well-prepared to enter a pool of open, well-paying tech jobs.</span></p>
+		<button onclick="fun()" id="but">Learn More</button>
+	</div>
+	<div class="of">
+		<h3><u>Negative imapcts</u></h3>
+		<p class="c">When children become more reliant on mobile devices, they are more likely to be virtually associated with family and friends rather than physically spending time with them; they are more likely to email, talk on social media, or communicate via online gaming than to visit them in person.Children spend less time outdoors playing, biking, and eating calories as they spend more time in front of those screens—mostly on the sofa. These patterns can lead to substantial weight gain and other health issues over time.Overuse of mobile devices can be detrimental to children's health because the more time they spend on them, the less time they spend doing physical activities. Furthermore, when children tend to play on their computers rather than engage in physical activity, they are more likely to engage in mindless snacking and other unhealthy behaviors.Children and adolescents who used media before bedtime<span id="bok">...</span><span id="lee"> were twice as likely to sleep poorly at night. Furthermore, having access to a media system in their sleeping environment was linked to getting insufficient sleep, even though the device was not actively used near bedtime.Technology, as many other items that children enjoy, such as pizza or sweets, may be wonderful—but only in moderation. Misuse and a lack of sensitivity to how much technology is "too much" are the issues associated with technology. Be sure to supervise and limit your children's use of technology so that they can benefit from it.</span></p>
+		<button onclick="fac()" id="off">Learn More</button>
+
+	</div>
+			<div class="so">
+		<h3><u>Conclusion</u></h3>
+			<p class="c">From the above description, It is clear that the technology can have both negative as well as posisitive impacts on students. It may help to make things easier but excessive use may lead to physical illness.</p>
+			</div>
+	<footer>
+		<div class="footer">
+		<section>
+		<p class="sos">All rights reserved. Designed by:<b> Raaj Bhandari</b><br> For further more details you can visit below links.</p>
+	</section>
+		<ul>
+			<li><a href="https://www.instagram.com/raaj_bhandari0209"><img src="insta.jpg" alt="instagram logo" width="30" height="30"></a>
+			</li>
+			<li><a href="https://www.facebook.com/raaj.bhandari.79"><img src="facebook.png" alt="facebook logo" width="30" height="30"></a></li>
+			<li><a href="https://twitter.com/RaajBhandari12"><img src="twitter.jpg" alt="twitter logo" width="30" height="30"></a></li>
+		</ul>
+	</div>
+	</footer>
+	
+
+<script>
+		function fun() {
+		  var dots = document.getElementById("dot");
+		  var readText = document.getElementById("read");
+		  var butText = document.getElementById("but");
+
+		  if (dots.style.display === "none") {
+		    dots.style.display = "inline";
+		    butText.innerHTML = "Learn More";
+		    
+		    readText.style.display = "none";
+		  } else {
+		    dots.style.display = "none";
+		    butText.innerHTML = "Learn less";
+
+		    readText.style.display = "inline";
+		  }
+		}
+			
+
+		</script>
+
+
+</body>
+</html>
